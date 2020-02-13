@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fearless Steps Challenge: Phase 2</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles.css"> 
+	
+</head>
+<body>
+<div class="page-wrapper">
+<div class="top-banner">
+<h1> Fearless Steps Challenge:<br>Phase II</h1>
+
+
+</div>
+<div class="top-top-nav">
+
+<div class="tabs">
+	<div class="tabs-img">
+		<img src="images/top-1.jpg" alt="Fearless Engineering" id="fearless">
+		
+		</div>
+	<div class="links">
+		<!--<a href="#Track_1"><u><strong>Speech Activity Detection</strong></u></a><br>-->
+		
+		<div class="link_list">
+			<a href="#Data">FS-2 Challenge Data</a><br>
+			<!--<a href="#Track_1">Baseline</a><br>
+			<a href="#Track_1">References</a><br>-->
+		
+		</div>
+		
+		
+	</div>
+</div>
+<div class="image-top" >
+<img src="images/Logos.png" alt="" id="logo">
+</div>
+<div class="top-nav">
+		<a href="index.html">Home</a>
+		<a class="active" href="Data.html">FSC-2 Data</a>
+		<a href="Register.html">Register</a>
+		<a href="Submission.html">Submission</a>
+		<a href="SAD.html">SAD</a>
+		<a href="DIAR.html">DIAR</a>
+		<a href="SID.html">SID</a>
+		<a href="ASR.html">ASR</a>
+		<a href="Final.html">Leaderboard</a>	
+	</div>
+<div class="article" id="Data">
+<h2>FS-2 Challenge Data</h2>
+<img src="images/Stages.png" alt="Stages of the Mission" id="fsc" >
+ 						<p style="font-size: 14px;text-align: center;">Figure shows the Stages of the Mission</p><br>
+  						<p>The Stages 1, 5 and 6 were high impact mission-critical events which is ideal for the development of the 100-hour Challenge Corpus. With the quality of speech data varying between  0 and 20 dB SNR in this challenge corpus, the channel variability and complex interactions across all five channels of interest are mostly enc<br>apsulated in these 100 hours. The multichannel data are chosen from the major events given below:</p>
+  						<ul>
+  								<li> Lift Off (25 hours)</li><br>
+								<li> Lunar Landing (50 hours)</li><br>
+								<li> Lunar Walking (25 hours)</li><br>
+						</ul>
+						<p>These landmark events have been found to possess rich information from the speech and language perspective.five channels out of the 29 channels were picked since it had the the most activity over the selected events. </p>
+						<ul>
+  								<li> Flight Director (FD) </li><br>
+								<li> Mission Operations Control Room (MOCR)</li><br>
+								<li> Guidance Navigation and Control (GNC)</li><br>
+								<li> Network Controller (NTWK) </li><br>
+								<li> Electrical, Environmental and Consumables Manager (EECOM) </li><br>
+						</ul>
+						<p>The personnel operating these five channels (channel owners/primary speakers) were in command of the most critical aspects of the mission, with additional backroom staff looping in for interactions with the primary owners of this channel.</p><br>
+						<img src="images/DT1.png" alt="Table 1 the shows distribution of total speech content" id="fsc"><br>
+						<p>The distribution of total speech content in each of the channels for every event has been given in the table above. Total speech content in the challenge corpus amounts to approximately 36 hours.</p>
+<p>To make sure there is an equitable distribution of data into training, evaluation, and development sets for the challenge tasks, we have categorized the data based on noise levels, amount of speech content, and amount of silence. Due to the long silence durations, and based on importance of the mission, the speech activity density of the corpus varies throughout the mission.</p>
+						<img src="images/DT2.png" alt="Table 2 shows the Signal to Noise Ratio Statistics per channel for Dev Data" id="fsc"><br>
+						<p>The above table above is a general analysis of the Challenge data. Even though the Researchers are not provided with the channel information of Train, Test and Dev Sets, they may be able to make inferences by computing SNR’s for each file.</p>
+
+<div class="sub-article">
+<h3>Challenge Rules and Conditions</h3>
+<p>
+<ul>
+<li>Participants can choose to take part in any one or more tasks from Fearless Steps challenge.</li><br>
+
+<li>This Challenge follows Open training conditions. Participants are allowed to use any available data in addition to the provided Challenge Data to train and tune their systems.</li><br> 
+
+<li>Ground Truth Labels provided for a specific Task/Track should only be used for its corresponding task. Participants are not allowed to use the labels provided for a given task to improve system performance on any other task.<br>
+	example 1: The refSAD ground truth labels in the Speaker Diarization Task 2 are prohibited from being used to benefit the performance of any other Tasks except "SD Track-2".<br> 
+	example 2: The "SAD" (Task 1) ground truth labels are prohibited from being used to benefit the performance of any other Tasks such as "ASR_track1" and "SD_track_1".</li><br>
+
+<li>All ground truth labels and system submisions follow similar protocols as described in FEARLESS STEPS CHALLENGE PHASE-1 EVALUATION PLAN (https://go.aws/2Ha5mVq). Until further notice from the organisers (which shall be made available on the challenge website: https://fearless-steps.github.io/ChallengePhase2/), Participants are requested to use the information provided in the Evaluation plan and the Phase-1 Challenge website (http://fearlesssteps.exploreapollo.org/) to develop and evaluate their systems.</li><br> 
+
+<li>All Challenge participants are required to submit a conference paper(s) describing their systems (and reporting performance on Dev and Eval sets) to the "FEARLESS STEPS CHALLENGE PHASE-2" special sessions section at ISCA INTERSPEECH-2020.</li><br>
+
+<li>Researchers who intend to use FEARLESS STEPS corpus for other speech and language tasks outside the scope of Phase-2 Challenge are must also submit their paper(s) with system descriptions to the Special Sessions section for INTERSPEECH-2020.</li><br>
+</ul>
+</p>
+</div>
+<p><br></p>
+<p>To participate in the challenge, Please click the button below to register!</p>
+<div class="register_button">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScHh093mwT2necdGdKdn3sCOwiXS7Vjzeh2hJ3KLstblUfeMw/viewform" target="_blank"class="button">REGISTER NOW!</a>
+</div>
+<p><br></p>
+</div>
+</div>
+</div>
+
+</body>
+
+
+</html>

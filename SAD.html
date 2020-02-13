@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fearless Steps Challenge: Phase 2</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles.css"> 
+	
+</head>
+<body>
+<div class="page-wrapper">
+<div class="top-banner">
+<h1> Fearless Steps Challenge:<br>Phase II</h1>
+
+
+</div>
+<div class="top-top-nav">
+
+<div class="tabs">
+	<div class="tabs-img">
+		<img src="images/top-1.jpg" alt="Fearless Engineering" id="fearless">
+		
+		</div>
+	<div class="links">
+		<a href="#Track_1"><u><strong>Speech Activity Detection</strong></u></a><br>
+		
+		<div class="link_list">
+			<a href="#Track_1">Instructions</a><br>
+			<a href="#Track_1">Baseline</a><br>
+			<a href="#Track_1">References</a><br>		
+		
+		</div>
+		
+		
+	</div>
+</div>
+<div class="image-top" >
+<img src="images/Logos.png" alt="" id="logo">
+</div>
+<div class="top-nav">
+		<a href="index.html">Home</a>
+		<a href="Data.html">FSC-2 Data</a>
+		<a href="Register.html">Register</a>
+		<a href="Submission.html">Submission</a>
+		<a class="active" href="SAD.html">SAD</a>
+		<a href="DIAR.html">DIAR</a>
+		<a href="SID.html">SID</a>
+		<a href="ASR.html">ASR</a>
+		<a href="Final.html">Leaderboard</a>	
+	</div>
+<div class="article" id="Track_1">
+<h2>Speech Activity Detection</h2>
+<p>The goal in the SAD task is to automatically detect the presence of speech segments in an audio recordings of variable duration.  A system output is scored by comparing the system produced start and end times of speech and non-speech segments in audio recordings to human annotated start and end times.  The DCF( Detection Cost Function)) is a function of false-positive (false alarm) and false-negative (missed  detection)  rates  calculated  from  comparison  to  the  human  annotation  that  will  be  the reference for the comparison.</p>
+<div class="sub-article" id="#Instruction_track_1">
+<h3>Instructions</h3>
+ <h4>Performance Metrics</h4>
+        				 <p>Four system output possibilities are considered:</p>
+        				 <ul>
+								<li> True Positive (TP) - system correctly identifies start-stop times of speech segments compared to the reference (manual annotation) </li><br>        				 
+								<li> True Negative (TN) - system correctly identifies start-stop times of non-speech segments compared to reference,</li><br>        				 
+        				 		<li> False Positive (FP) - system incorrectly identifies speech in a segment where the reference identifies the segment as non-speech</li><br>
+        				 		<li> False Negative (FN) - system missed identification of speech in a segment where the reference identifies a segment as speech.</li><br>
+        				 </ul>
+        				 <p> SAD error rates represent a measure of the amount of time that is misclassified by the systems segmentation of the test audio files. Missing, or failing to detect, actual speech is considered a
+more serious error than misidentifying its start and end times.</p>
+						<p>The four system output possibilities mentioned above determine the probability of a false positive (P<sub>FP</sub>) and the probability of a false negative (P<sub>FN</sub>). Developers are responsible for determining a hypothetical optimum setting (θ) for their system that minimizes the DCF value.</p>
+						
+						<img src="images/SAD1.png" id="fsc2">
+						<p>P<sub>FP</sub> = detecting speech where there is no speech, also called a false alarm.
+P<sub>FN</sub> = missed detection of speech, i.e., not detecting speech where there is speech, also called a miss</p>
+						<p>DCF(θ) is the detection cost function value for a system at a given system decision-threshold setting.</p>
+						
+						<img src="images/SAD2.png" id="fsc2">
+						<p>P<sub>FN</sub> and P<sub>FP</sub> are weighted 0.75 and 0.25, respectively, θ - denotes a given system decision-threshold setting.</p>
+
+
+</div>
+
+<div class="sub-article" id="#Baseline_track_1">
+<h3>Baseline</h3>
+<p>For information about the baseline results, Please<a href="http://fearlesssteps.exploreapollo.org/">click here</a>.</p>
+</div>
+
+<div class="sub-article" id="#References_track_1">
+<h3>References</h3>
+<p>Coming soon!.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+
+
+</html>

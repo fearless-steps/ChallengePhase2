@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fearless Steps Challenge: Phase 2</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles.css"> 
+	
+</head>
+<body>
+<div class="page-wrapper">
+<div class="top-banner">
+<h1> Fearless Steps Challenge:<br>Phase II</h1>
+
+
+</div>
+<div class="top-top-nav">
+
+<div class="tabs">
+	<div class="tabs-img">
+		<img src="images/top-1.jpg" alt="Fearless Engineering" id="fearless">
+		
+		</div>
+	<div class="links">
+		<a href="#Track_1"><u><strong>Speaker Diarization</strong></u></a><br>
+		<a href="#Track_1">Track 1</a><br>
+		<div class="link_list">
+			
+			<a href="#Track_1">Baseline</a><br>
+			<a href="#Track_1">References</a><br>		
+		
+		</div>
+		<a href="#Track_2">Track 2</a><br>
+		<div class="link_list">
+			
+			<a href="#Track_2">Baseline</a><br>
+			<a href="#Track_2">References</a><br>		
+		
+		</div>
+		
+	</div>
+</div>
+<div class="image-top" >
+<img src="images/Logos.png" alt="" id="logo">
+</div>
+<div class="top-nav">
+		<a href="index.html">Home</a>
+		<a href="Data.html">FSC-2 Data</a>
+		<a href="Register.html">Register</a>
+		<a href="Submission.html">Submission</a>
+		<a href="SAD.html">SAD</a>
+		<a class="active" href="DIAR.html">DIAR</a>
+		<a href="SID.html">SID</a>
+		<a href="ASR.html">ASR</a>
+		<a href="Final.html">Leaderboard</a>	
+	</div>
+	
+	
+<div class="article" id="Speaker_diar">
+<h2>Speaker Diarization</h2>
+<p>Speaker diarization has received much attention by the speech community, and while many of the currently developed state-of-the-art systems for telephone speech, broadcast news and meetings,their performance does not translate to naturalistic speech in highly degraded noise environments. This  FS Phase-02  challenge  will  focus  on  evaluating  systems  on  per  file  Diarization Error Rate (DER).</p> 
+    				
+    				<h4>Performance Metrics</h4>
+    				<p>Diarization error rate (DER), introduced for the NIST Rich Transcription Spring 2003 Evaluation (RT-03S), is the total percentage of reference speaker time that is not correctly attributed to a
+speaker, where correctly attributed is defined in terms of an optimal one-to-one mapping between the reference and system speakers. More concretely, DER is defined as:</p>
+					<img src="images/Diar1.png" id="fsc1">
+    				<p>where,</p>
+    				<ul>
+						<li> TOTAL is the total reference speaker time; that is, the sum of the durations of all reference speaker</li><br>
+						<li> FA is the total system speaker time not attributed to a reference speaker</li><br>  
+						<li> MISS is the total reference speaker time not attributed to a system speaker</li><br>    				
+ 						<li> ERROR is the total reference speaker time attributed to the wrong speaker segments</li><br>
+ 						</ul>
+ 						<p> The per-file results for DER will be considered for evaluation. For additional details about scoring and tool usage, please consult the documentation.</p>
+ 						<p></p>
+</div>
+<div class="article" id="Track_1">
+<h2>Track 1</h2>
+<p>Track 1 for Speaker Diarization consists of audio streams each of length 30 minutes. Each audio file has a corresponding transcript which provides speaker information, However the user will have no ground truth labels and are to build their own Speech Activity Detection System to achieve this task. </p>
+
+<div class="sub-article" id="#Baseline_track_1">
+<h3>Baseline</h3>
+<p>For information about the baseline results, Please<a href="http://fearlesssteps.exploreapollo.org/">click here</a></p>
+</div>
+
+<div class="sub-article" id="#References_track_1">
+<h3>References</h3>
+<p>Coming Soon!!.</p>
+</div>
+</div>
+
+<div class="article" id="Track_2">
+<h2>Track 2</h2>
+<p>
+Track 2 for Speaker Diarization consists of audio streams each of length 30 minutes. Each audio file has a corresponding transcript which provides speaker information, and the ground truth labels for Speech Activity Detection for each audio file. The user can use the reference SAD labels to train and test their systems. 
+</p>
+
+
+<div class="sub-article" id="#Baseline_track_2">
+<h3>Baseline</h3>
+<p>Will be announced soon!!</p>
+</div>
+
+<div class="sub-article" id="#References_track_2">
+<h3>References</h3>
+<p>Coming Soon!!.</p>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</body>
+
+
+</html>
