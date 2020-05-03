@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,9 +29,13 @@
 		<!--<a href="#Track_1"><u><strong>Speech Activity Detection</strong></u></a><br>-->
 		
 		<div class="link_list">
-			<a href="#Submission">Submission</a><br>
-			<!--<a href="#Track_1">Baseline</a><br>
-			<a href="#Track_1">References</a><br>-->
+			<a href="#Submission">Submission Rules</a><br>
+            <a href="#Evaluation">Evaluation Rules</a><br>
+            <a href="#Systemdesc">System Description Document</a><br>
+			
+            
+            
+            
 		
 		</div>
 		
@@ -52,9 +57,142 @@
 		<a href="Final.html">Leaderboard</a>	
 	</div>
 <div class="article" id="Submission">
-<h2>Submission</h2>
-<p>Coming Soon!!.</p>
+<h2>Submission Rules</h2>
+<p><ol>
 
+<li> Registered Participants can choose to make multiple submissions in any one or more tasks from the Fearless Steps challenge. 
+   Participants not registered, but a part of the registered participants' team can also submit their system results.
+   Submissions by researchers who did not register for the challenge and are not a part of any registered teams will not 
+   be considered for the Challenge.</li><br>
+
+<li> Submissions will only be accepted as long as they follow the format provided below and in the example submission packet.
+   Every submission must abide by the following rules:<br>
+    <ul>
+    <li> Submissions should be sent to FearlessSteps@utdallas.edu in an email titled: "FS02 SUBMISSION"</li><br>
+    
+    <li> The email must contain one or more attachments of one or more submission packets, each in a compressed format.<br>
+        (REFER: Example submission packet provided with the FS02_Scoring_Toolkit: 
+            <a href="https://github.com/AJoGaTech/FS02_Scoring_Toolkit">FS02_Scoring_Toolkit</a></li><br>
+    
+    <li>A single compressed (.zip or .tar.gz) submission packet should contain 3 main items:<br><br>
+        <ul>
+        <li> System Description Document (.pdf file)</li><br>
+        
+        <li> Dev (folder containing system outputs)</li><br>
+        
+        <li> Eval (folder containing system outputs)</li><br>    
+        </ul>
+    (REFER: "FS02_System_Description_eg.pdf" provided in the submission packet
+        to understand the contents the 3 items must include)</li><br>
+   </ul></li>
+    <li> Every submission packet should have the following File Naming convention:<br>
+        
+        &lt;email-id&gt;_&lt;task-name&gt;_Submission_&lt;system-number&gt;.&lt;extn&gt;<br>
+           (REFER: "crss@utdallas.edu_ASR_track2_Submission_1.tar.gz" provided as an illustration
+        in the submission packet folder of the toolkit)</li><br>
+        
+<li> System submissions will be accepted between May 1, 2020, 12.00am AOE and May 6, 2020, 12.00am AOE.
+   The FS Team will reply to each email submission acknowledging the receipt of each teams' 
+   submission packets.</li><br>
+
+</ol>
+</p>
+</div>
+
+<div class="article" id="Evaluation">
+<h2>Evaluation Rules</h2>
+<p><ol>
+
+<li> Both Dev and Eval system submissions will be scored. Only Eval set results will be considered 
+   to rank teams for each Challenge. </li><br>
+
+<li> Results for each system submission will be sent privately to respective participants on May 7th.
+   For every team, only the 5 best performing system submissions per task will be considered for the ranking.</li><br>
+
+<li> Evaluation code available at <a href="https://github.com/AJoGaTech/FS02_Scoring_Toolkit">FS02_Scoring_Toolkit</a> will be used to score 
+   all systems. Participants are expected to test their system output files using the Dev set
+   ground truth labels to ensure proper formatting of all system outputs prior to submission.</li><br>
+
+<li> Participants will be notified of their rankings on May 7, 2020 before 11.59pm AOE, which they can report 
+   on their conference paper(s). The best performing systems will be displayed on the FS02 website 
+   leaderboard under each team-name and system-number (&lt;team-name&gt;_system_&lt;system-number&gt;)<br>
+   (REFER: <a href="https://fearless-steps.github.io/ChallengePhase2/Final.html">to this page</a> )</li><br>
+
+<li> All Challenge participants are required to submit a conference paper(s) describing their systems 
+   (and reporting performance on Dev and Eval sets) to the "FEARLESS STEPS CHALLENGE PHASE-2" 
+   Special Sessions section at ISCA INTERSPEECH-2020. (Deadline: May 8, 2020)</li><br>
+
+</ol><br>
+</p>
+</div>
+<div class="article" id="Systemdesc">
+<h2>System Description Document</h2>
+<p>
+This document serves as an example system description document, which is being used to
+provide details regarding the Submission Packet for the Fearless Steps Challenge Phase-02.
+Contents of the Submission Packet:</p>
+<p><ol>
+<li> System Description Document: A document describing the system should be included as
+a .pdf file in the base submission packet directory (same location as in the example
+submission packet provided). More details on the description provided in FS01 Eval Plan
+- Appendix D. Participants can also send their Interspeech paper drafts as a System
+Description Document (this document will not be shared by the FS Team to anyone at
+any time). If participants are sending multiple submissions for the same task based on
+the system described in the paper, the same document can be used in multiple
+submission packets.</li><br>
+
+<li> Dev and Eval : Participants are required to send their system output results on both the
+Dev and Eval sets for a given task. The Dev folder should only include system output
+results for a given challenge task on the Dev set provided for that task. The Eval folder
+should only include system output results for a given challenge task on the Eval set
+provided for that task. All system output files should have the same filename (with
+different extension) as its corresponding audio stream file for tasks using audio streams
+(SAD, SD_track_1, SD_track2, and ASR_track1). For tasks using audio segments
+(SID, ASR_track2). For correct formatting examples, please refer to the ./egs/ directory
+of the FS02 Scoring Toolkit. Additionally, details regarding the system output files are
+also provided by running the shell scripts in ./scripts/ with no input arguments.<br>
+The following number of files will be expected in both folders (per task):<br>
+<ul>
+<li> Speech Activity Detection (SAD): All the files should have the .txt extension
+and must follow the format provided in the FS01 Eval Plan Appendix A.3.<br>
+i. Dev: 30 files, titled FS02_dev_001.txt … to … FS02_dev_030.txt<br>
+ii. Eval: 40 files, titled FS02_eval_001.txt … to … FS02_eval_040.txt</li><br>
+
+<li> Speaker Diarization (SD_track1, SD_track2): Both tracks will have the same
+submission format. All the files should have the .rttm extension and must follow
+the format provided in the above mentioned Eval Plan, Appendix A.1.<br>
+i. Dev: 30 files, titled FS02_dev_001.rttm … to … FS02_dev_030.rttm<br>
+ii. Eval: 40 files, titled FS02_eval_001.rttm … to … FS02_eval_040.rttm</li><br>
+
+<li> Speaker Identification (SID): The 2 files should have the .txt extension and
+must follow the format provided in the FS01 Eval Plan Appendix A.4.<br>
+i. Dev: 1 file, titled FS02_SID_uttID2spkID_Dev.txt which contains 6373 SID
+utterance IDs with their 5 system predictions.<br>
+ii. Eval: 40 files, titled FS02_SID_uttID2spkID_Eval.txt which contains 8466
+SID utterance IDs with their 5 system predictions.</li><br>
+
+<li> Automatic Speech Recognition Track-1 (ASR_track1): All the files should
+have the .json extension and must follow the format provided in the FS01 Eval
+Plan Appendix A.2. All .json files must have the respective fields in every
+object/struct: “words”, “startTime”, and “endTime”.<br>
+i. Dev: 30 files, titled FS02_dev_001.json … to … FS02_dev_030.json<br>
+ii. Eval: 40 files, titled FS02_eval_001.json … to … FS02_eval_040.json</li><br>
+
+<li> Speaker Identification (SID): The 2 files should have the NO file extension and
+must follow the format provided by Kaldi, describes in the “text” section of the
+<a href="https://kaldi-asr.org/doc/data_prep.html#data_prep_data">Kaldi Data Prep page.</a><br>
+i. Dev: 1 file, titled FS02_ASR_track2_transcriptions_Dev which contains
+9203 utterance IDs with their corresponding transcriptions.<br>
+ii. Eval: 40 files, titled FS02_ASR_track2_transcriptions_Eval which contains
+13714 utterance IDs with their corresponding transcriptions.</li><br>
+</ul></li>
+</ol><br>
+Additional details regarding the Evaluation and Submission Rules are provided to participants in
+a separate document. Please feel free to reach out to FearlessSteps@utdallas.edu for any
+queries or clarifications.
+
+</p>
+</div>
 </div>
 </div>
 </div>
